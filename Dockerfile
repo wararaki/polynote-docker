@@ -16,10 +16,8 @@ RUN wget https://github.com/polynote/polynote/releases/download/0.2.8/polynote-d
     tar -zxvpf polynote-dist.tar.gz && \
     rm -rf polynote-dist.tar.gz
 
-COPY docker-entrypoint.sh /polynote/docker-entrypoint.sh
 COPY config.yml /polynote/config.yml
-
 RUN mkdir /notebooks
 
 WORKDIR /polynote
-ENTRYPOINT [ "bash", "docker-entrypoint.sh" ]
+CMD [ "./polynote" ]

@@ -5,5 +5,5 @@ services:
     image: polynote:0.2.8
     ports:
       - 8192:8192
-    volumes:
-      - /home/user/notebooks:/notebooks
+    # volumes:
+    #   - /home/user/notebooks:/notebooks
