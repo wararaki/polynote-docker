@@ -1,6 +1,7 @@
 jep==3.9.0
 jedi==0.15.1
 numpy==1.17.3
+pandas==0.25.1
 pyspark==2.4.4
 requests==2.22.0
 urllib3==1.25.6
